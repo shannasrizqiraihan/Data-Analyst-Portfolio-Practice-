@@ -187,7 +187,7 @@ with col1:
         plot_bgcolor='rgba(0,0,0,0)',
         font=dict(color='white', size=12)
     )
-    st.plotly_chart(fig_type, use_container_width=True)
+    st.plotly_chart(fig_type, use_container_width=True, key="unique_key_here")
 
 with col2:
     # Rating Distribution
