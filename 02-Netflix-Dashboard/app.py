@@ -1,7 +1,7 @@
 """
 Netflix Content Analysis Dashboard
-Created by: [Your Name]
-GitHub: [Your GitHub Link]
+Created by: Shannas Rizqi
+GitHub: https://github.com/shannasrizqiraihan/Data-Analyst-Portfolio-Practice-
 """
 
 import streamlit as st
@@ -48,7 +48,7 @@ st.markdown("""
 # ============================================================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv('netflix_titles.csv')
+    df = pd.read_csv('02-Netflix-Dashboard/netflix_titles.csv')
     df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
     df['year_added'] = df['date_added'].dt.year
     df['month_added'] = df['date_added'].dt.month
@@ -99,8 +99,8 @@ including trends, distributions, and insights about movies and TV shows.
 
 **Data Source:** Netflix Titles Dataset (Kaggle)
 
-**Created by:** [Your Name]  
-**GitHub:** [Your Repository Link]
+**Created by:** Shannas Rizqi  
+**GitHub:** https://github.com/shannasrizqiraihan/Data-Analyst-Portfolio-Practice-
 """)
 
 # ============================================================================
@@ -537,6 +537,6 @@ st.markdown("""
 <div style='text-align: center; color: #888888;'>
     <p>📊 Netflix Content Analysis Dashboard | Created with Streamlit & Plotly</p>
     <p>Data Source: <a href='https://www.kaggle.com/datasets/shivamb/netflix-shows' target='_blank'>Netflix Shows Dataset (Kaggle)</a></p>
-    <p>© 2024 [Your Name] | <a href='[Your GitHub Link]' target='_blank'>GitHub Repository</a></p>
+    <p>© 2025 Shannas Rizqi | <a href='https://github.com/shannasrizqiraihan/Data-Analyst-Portfolio-Practice-' target='_blank'>GitHub Repository</a></p>
 </div>
 """, unsafe_allow_html=True)
