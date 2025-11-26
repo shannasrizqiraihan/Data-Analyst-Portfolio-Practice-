@@ -48,7 +48,7 @@ st.markdown("""
 # ============================================================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv('netflix_titles.csv')
+    df = pd.read_csv('02-Netflix-Dashboard/netflix_titles.csv')
     df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
     df['year_added'] = df['date_added'].dt.year
     df['month_added'] = df['date_added'].dt.month
